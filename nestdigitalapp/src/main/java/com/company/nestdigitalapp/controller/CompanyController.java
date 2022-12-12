@@ -29,7 +29,7 @@ public class CompanyController {
         return (List<Employee>) dao.SearchEmployee(e.getEmpName());
     }
 
-@GetMapping(path = "/view", consumes = "application/json", produces = "application/json")
+@GetMapping(path = "/view")
 public List<Employee> viewEmployee() {
     return (List<Employee>) dao.findAll();
 }
